@@ -2,13 +2,18 @@ import Vue from 'vue'
 import router from './router.js'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import env from './env'
+// import env from './env'
 import App from './App.vue'
 
+// mock开关
+const mock = true
+if(mock){
+  require('./mock/api')
+}
 // 根据前端的跨域方式做调整
 axios.defaults.baseURL = '/api'
 // 根据环境变量不同的请求地址
-axios.defaults.baseURL = env.baseURL
+// axios.defaults.baseURL = env.baseURL
 // 超时
 axios.defaults.timeout = 8000
 // 接口错误拦截
