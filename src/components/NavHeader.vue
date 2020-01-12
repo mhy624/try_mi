@@ -221,7 +221,7 @@ export default {
                         color: #333333;
                         font-weight: bold;
                         font-size: 16px;
-                        line-height: 112px;
+                        line-height: 18px;
                         margin-right: 20px;
                         span{
                             cursor: pointer;
@@ -245,6 +245,7 @@ export default {
                             box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.11);
                             z-index: 10;
                             transition: height .5s;
+                            background-color: #ffffff;
                             .product{
                                 position: relative;
                                 float: left;
