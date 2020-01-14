@@ -83,12 +83,12 @@
                                 <span v-if="j%2==0" class="new-pro">新品</span>
                                 <span v-if="j%2!==0" class="kill-pro">秒杀</span>
                                 <div class="item-img">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6f2493e6c6fe8e2485c407e5d75e3651.jpg" alt="">
+                                    <img :src="item.mainImage" alt="">
                                 </div>
                                 <div class="item-info">
-                                    <h3>小米9</h3>
-                                    <p>骁龙855，索尼4800万超广角微距</p>
-                                    <p class="price">2999元</p>
+                                    <h3>{{item.name}}</h3>
+                                    <p>{{item.subtitle}}</p>
+                                    <p class="price">{{item.price}}元</p>
                                 </div>
                             </div>
                         </div>
